@@ -36,7 +36,7 @@ class Stock:
             "host": "127.0.0.1",
             "port": 3306,
             "user": "root",
-            "password": "q0925050",
+            "password": "adminadmin",
             "db": "stock",
             "charset": "utf8"
         }
@@ -67,7 +67,7 @@ class Stock:
         except Exception as ex:
             print("Exception:", ex)
 
-
-stock = Stock("6104", "2330")
+num = input("請輸入股票代碼：")
+stock = Stock(num)
 print(stock.scrape())
 stock.save(stock.scrape())
