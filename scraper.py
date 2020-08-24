@@ -29,7 +29,7 @@ class Stock:
                                                 for td in tds))
 
         return result
-#connecting to database
+# connecting to database
     def save(self, stocks):
 
         db_settings = {
@@ -66,6 +66,7 @@ class Stock:
 
         except Exception as ex:
             print("Exception:", ex)
+
 
 num = input("請輸入股票代碼：")
 stock = Stock(num)
