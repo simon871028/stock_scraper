@@ -29,7 +29,7 @@ class Stock:
                                                 for td in tds))
 
         return result
-
+#connecting to database
     def save(self, stocks):
 
         db_settings = {
